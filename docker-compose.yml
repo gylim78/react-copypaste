@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  touch-print_v3:
+    build : .
+    volumes:
+      - ./src:/var/www/html
+    environment:
+      TZ : Asia/Singapore
+    container_name: copypaste
+    ports:
+      - "80:80"
